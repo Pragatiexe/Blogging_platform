@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.section {
+  padding: 3rem 2rem;
+}
+
+.editor-section {
+  background: #fff0f6;
+}
+
+.editor-section h2,
+.explore-section h2 {
+  margin-bottom: 1rem;
+  color: #8e2de2;
+}
+
+.editor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+.editor-form input,
+.editor-form textarea,
+.editor-form select,
+.editor-form button {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.editor-form input:focus,
+.editor-form textarea:focus,
+.editor-form select:focus {
+  border-color: #2d45e2;
+  box-shadow: 0 0 5px rgba(142, 45, 226, 0.4);
+  outline: none;
+}
+
+.editor-form button {
+  background: #8e2de2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.editor-form button:hover {
+  background: #4a00e0;
+}
+
+.explore-section {
+  background: #f0f4ff;
+}
+
+.post-preview {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.post-preview h3 {
+  color: #4a00e0;
+}
+
+.post-preview p {
+  margin: 0.5rem 0;
+}
+
+.tag, .category {
+  display: inline-block;
+  margin-right: 0.5rem;
+  background: #dfe9ff;
+  color: #4a00e0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #6a11cb;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
