@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Blogging Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="" href="script.js" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">BlogPlatform</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#editor">Editor</a></li>
+      <li><a href="#explore">Explore</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <section id="editor" class="section editor-section">
+    <h2>Create a New Blog Post</h2>
+    <form class="editor-form">
+      <input type="text" placeholder="Post Title" required />
+      <textarea placeholder="Write your post..." rows="10"></textarea>
+      <input type="text" placeholder="Tags (comma-separated)" />
+      <select>
+        <option value="">Select Category</option>
+        <option>Tech</option>
+        <option>Lifestyle</option>
+        <option>Travel</option>
+      </select>
+<button type="submit">Publish</button>
+    </form>
+  </section>
+
+  <section id="explore" class="section explore-section">
+    <h2>Explore Posts</h2>
+    <div class="post-preview">
+      <h3>Sample Post Title</h3>
+      <p>This is a preview of the blog post content...</p>
+      <span class="tag">#Tech</span>
+      <span class="category">Tech</span>
+    </div>
+    <!-- Add more post previews -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
